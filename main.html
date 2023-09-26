@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div id="barIcon">
+        <i class="fas fa-bars bar-icon"></i>
+    </div>
+   <div class="main-container d-none" id="mainContainer">
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile">
+                <div class="top-navbar">
+                    <div class="enter">
+                        <a href="#"><i class="fas fa-x icon"></i></a>
+
+                    </div>
+                </div>
+                <img src="user.svg">
+                <h3>User Name</h3>
+                <p>Student</p>
+            </div>
+            <ul>
+                <li><a href="#" class="active">
+                    <span class="icon"><i class="fa-solid fa-book-open-reader"></i></span>
+                    <span class="item"> 
+                Book Community
+                </span></a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
+                    <span class="item"> 
+                Exam-Prep Scheduler
+                </span></a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-file-video"></i></span>
+                    <span class="item"> 
+                Video Summarizer
+                </span></a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-language"></i></span>
+                    <span class="item"> 
+                Apna Basha
+                </span></a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-user-pen"></i></span>
+                    <span class="item"> 
+                Offline Friend
+                </span></a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-signal"></i></span>
+                    <span class="item"> 
+                Student Progress
+                </span></a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-ear-deaf"></i></span>
+                    <span class="item"> 
+                Sign Language Friend
+                </span></a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fa-solid fa-gamepad"></i></span>
+                    <span class="item"> 
+                Let's Play
+                </span></a></li>
+                
+            </ul>
+           
+        </div>
+    </div>
+</div>
+
+</div>
+    <script>
+        var enter=document.querySelector(".enter");
+        let barIcon = document.getElementById("barIcon");
+        let mainContainer = document.getElementById("mainContainer");
+
+        barIcon.addEventListener('click', function() {
+            mainContainer.classList.remove("d-none");
+            barIcon.classList.add("d-none");
+        });
+
+        enter.addEventListener('click', function() {
+            mainContainer.classList.add("d-none");
+            barIcon.classList.remove("d-none");
+        });
+
+        
+    </script>
+
+</body>
+</html>
